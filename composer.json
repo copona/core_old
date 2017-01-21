@@ -11,8 +11,7 @@
         "klarna/kco_rest": "^2.2",
         "php": ">=5.4.0",
         "phpmailer/phpmailer": "^5.2",
-        "hassankhan/config": "^0.10",
-        "copona/composer-installers": "dev-master"
+        "hassankhan/config": "^0.10"
     },
     "autoload": {
         "psr-4": {
@@ -22,11 +21,5 @@
             "Copona\\Core\\Catalog\\": "catalog/",
             "Copona\\Core\\System\\": "system/"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/copona/composer-installers.git"
-        }
-    ]
+    }
 }
