@@ -12,23 +12,15 @@
         "php": ">=5.4.0",
         "phpmailer/phpmailer": "^5.2",
         "hassankhan/config": "^0.10",
-
-        "copona/composer-installers": "dev-master",
-        "prhost/example-extension-copona": "dev-master"
+        "copona/composer-installers": "dev-master"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/prhost/example-extension-copona.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/copona/composer-installers.git"
-        }
-    ],
     "autoload": {
         "psr-4": {
-            "Copona\\": "/"
+            "Copona\\Extensions\\": "../extensions/",
+            "Copona\\Themes\\": "../themes/",
+            "Copona\\Admin\\": "admin/",
+            "Copona\\Catalog\\": "catalog/",
+            "Copona\\System\\": "system/"
         }
     },
     "scripts": {}
