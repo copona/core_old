@@ -1,5 +1,5 @@
 {
-	"name": "copona/core",
+    "name": "copona/core",
     "type": "copona-core",
     "description": "",
     "license": "GPL-3.0+",
@@ -23,5 +23,10 @@
             "Copona\\Core\\System\\": "system/"
         }
     },
-    "scripts": {}
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/copona/composer-installers.git"
+        }
+    ]
 }
