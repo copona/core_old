@@ -18,9 +18,9 @@
         "psr-4": {
             "Copona\\Extensions\\": "../extensions/",
             "Copona\\Themes\\": "../themes/",
-            "Copona\\Admin\\": "admin/",
-            "Copona\\Catalog\\": "catalog/",
-            "Copona\\System\\": "system/"
+            "Copona\\Core\\Admin\\": "admin/",
+            "Copona\\Core\\Catalog\\": "catalog/",
+            "Copona\\Core\\System\\": "system/"
         }
     },
     "scripts": {}
