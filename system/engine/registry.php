@@ -1,16 +1,18 @@
 <?php
-final class Registry {
-	private $data = array();
 
-	public function get($key) {
-		return (isset($this->data[$key]) ? $this->data[$key] : null);
-	}
+namespace Copona\Core\System\Engine;
 
-	public function set($key, $value) {
-		$this->data[$key] = $value;
-	}
+use \Illuminate\Container\Container;
 
-	public function has($key) {
-		return isset($this->data[$key]);
-	}
+class Registry extends Container
+{
+    public function get($key)
+    {
+        return $this->make($key);
+    }
+
+    public function set($key, $value)
+    {
+        $this->bind($key, $value);
+    }
 }
